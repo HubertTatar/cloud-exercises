@@ -1,7 +1,12 @@
 ---
+server:
+  port: 8888
 spring:
+  config:
+    name: configserver
   cloud:
     config:
       server:
         git:
-          uri=
+          uri: https://github.com/HubertTatar/cloud-exercises/tree/master/ConfigData
+      name: configserver
