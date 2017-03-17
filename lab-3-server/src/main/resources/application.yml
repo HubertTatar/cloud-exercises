@@ -1,6 +1,8 @@
 ---
+encrypt:
+  key: juhas
 server:
-  port: 8888
+  port: 8001
 spring:
   config:
     name: configserver
@@ -8,5 +10,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/HubertTatar/cloud-exercises/tree/master/ConfigData
+          uri: https://github.com/HubertTatar/cloud-exercises/
       name: configserver
